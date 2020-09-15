@@ -47,7 +47,7 @@ ReactDOM.render(
     <ConnectedRouter history={history}>
       <Switch>
         <Route path="/" component={Welcome} strict={true} exact={true} />
-        {bookRoutes.map(R => () => (<R />))}
+        {bookRoutes}
         {reviewRoutes}
         <Route render={() => <h1>Not Found</h1>} />
       </Switch>
